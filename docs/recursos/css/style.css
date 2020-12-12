@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-size: 1em;
     color: #f2d1a8;
+    transition: .2s linear;
 }
 * a{
     color: #ebebeb;
@@ -12,7 +13,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #669b7c;
+    background-color: #353e55;
 }
 a{
     text-decoration: none;
@@ -25,11 +26,11 @@ a{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     /* background-color: rgba(255, 255, 255, .1); */
-    /* box-shadow: 2px 2px rgba(90, 94, 94, .3); */
+    box-shadow: 2px 2px rgba(90, 94, 94, .3);
 }
     .titulo{
         padding: 10px;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     .menu{
         max-width: 50%;
@@ -69,14 +70,14 @@ a{
     .portada img{
         width: 100%;
         height: 100vh;
-        max-height: 100%;
+        max-height: 105%;
     }
-    button{
+    /* button{
         position: absolute;
         width: 80px;
         height: 80px;
-        top: 70%;
-        left: 90%;
+        top: 80%;
+        left: 80%;
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 50%;
         border: none;
@@ -93,16 +94,14 @@ a{
             transform: scale(1.1);
             background-color: rgba(0, 0, 0, 0.5); 
             box-shadow: 2px 2px #303e27;           
-        }
+        } */
 
 /* Estilos de la primera seccion */
 .seccion{
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
     height: 100vh;
     max-height: 100%;
     margin: auto;
-    margin-top: -4px;
     position: relative;
 }
     .titulo-seccion{
@@ -121,7 +120,7 @@ a{
         height: 100%;
         max-height: 92.6vh;
         margin: 0 auto;
-        padding: 20px;
+        padding: 10px;
         display: flex;
         justify-content: space-evenly;
     }
@@ -135,18 +134,15 @@ a{
         .subseccion{
             margin: auto;
             margin-left: 10px;
-            width: 500px;
-            max-width: 70%;
-            /* height: 100%; */
-            /* background-color: red; */
+            width: 100%;
         }
             .eventos{
-                background-color: #557669;
+                background-color: #b36458;
                 color: white;
-                border: 1px dashed #ebebeb;
+                border: 1px outset #ebebeb;
             }
                 .eventos h2{
-                    padding: 10px;
+                    padding: 5px;
                     text-align: center;
                     background-color: #028090;
                     font-size: 2.5em;
@@ -154,7 +150,7 @@ a{
                     font-family: 'East Sea Dokdo', cursive;
                 }
                 .evento{
-                    padding: 20px;
+                    padding: 10px;
                 }
                     .evento h3{
                         margin-bottom: 7px;
@@ -162,69 +158,87 @@ a{
     
 /* Segunda seccion */
 #subseccion2{
-    width: 100%;
     margin: auto;
 }
     .calendario{
-        background-color: #405983;
+        background-color: #b36458;
         width: 100%;
-        border-bottom: 1px outset#ebebeb;
-        /* max-width: 800px; */
+        max-width: 600px;
+        margin: auto;
+        border: 2px outset #ebebeb;
     }
         .calendario h1{
-            padding: 20px; 
-            background-color: #405983;
-            border: 2px outset #ebebeb;
+            padding: 10px 20px; 
+            background-color: #353e55;
             font-size: 1.2em;
+            border-bottom: 2px outset #ebebeb;
         }
         .calendario h2{
-            padding: 20px;
-            background-color: #31bccc;
-            color: #303e27;
+            padding: 10px 20px;
+            background-color: #353e55;
+            /* color: #303e27; */
             text-align: right;
-            border-right: 1px outset #ebebeb;
-            border-bottom: 1px outset #ebebeb;
-            border-left: 1px outset #ebebeb;
             font-size: 1.1em;
-        }
-        .tabla{
-            border-right: 1px outset #ebebeb;
             border-bottom: 1px outset #ebebeb;
-            border-left: 1px outset #ebebeb;
-            display: grid;
-            grid-template-columns: repeat(4, 25%);        
-            padding: 20px;
         }
-            .tabla h3{
-                color: #6f3826;
+    /* Diseño de la tabla del calendario */
+        table{
+            text-align: center;
+            width: 90%;
+            margin: auto;
+            font-size: .8em;
+        }
+            table tr th{
+                padding: 10px;
+                border: 1px dashed #b36458;
             }
-            .columna{
-                display: grid;
-                grid-template-rows: repeat(6, auto);
-                background-color: #028090;
+                table:hover .head{
+                    background-color: #e0e7b8;
+                    border: 1px dashed #353e55;
+                }
+                table:hover .head th{
+                    color: #353e55;
+
+                }
+            table tr td{
+                padding: 5px;
+                border: 1px dashed #b36458;
             }
-                .fila {
-                    margin: auto;
-                    text-align: center;
-                    width: 100%;
-                    height: 100%;
-                    min-height: 60px;
-                    padding: 10px;
-                    border: 1px dashed #084d68;
+                table tr td:hover{
+                    color: #353e55;
+                    background-color: #e0e7b8;
+                    border: 1px dashed #353e55;
                 }
-                .fila:hover{
-                    background-color: #f2d1a8;
-                }
-                .fila:hover p{
-                    color: #1b5549;                
-                }
-                #columna1 p{
-                    background-color: #1b5549;
-                    width: 36px;
-                    height: 36px;
-                    margin: auto;
-                    padding: 10px;
-                    border-radius: 50%;
-                    color: #ffdd83;                    
-                }
-                    
+
+/* Estilos del pie de pagina */
+footer{
+    width: 100%;
+    background-color: red;
+}
+.fila:hover span{
+    color: ;
+}
+    .parte1{
+        width: 90%;
+        margin: auto;
+        /* display: inline-block; */
+        background-color: blue;
+    }
+        .parte1 .columna{
+            float: left;
+            width: 33.3%;
+        }
+    .parte2{
+        width: 100%;
+        display: inline-block;
+
+        background-color: green;
+    }
+        .parte2 .columna{
+            float: left;
+            width: 50%;
+        }
+        #politica{
+            display: flex;
+            justify-content: center;
+        }

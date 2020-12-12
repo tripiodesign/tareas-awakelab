@@ -32,7 +32,7 @@
 
 <!-- Portada de pagina-->
     <div class="portada" id="portada">
-        <button class="boton1"><a href="#seccion1">Eventos</a></button>
+        <!-- <button class="boton1"><a href="#seccion1">Eventos</a></button> -->
         <img src="recursos/img/design1_image1.jpg" alt="" id="img_portada">
     </div>
 <!-- inicio del contenido -->
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="boton1"><a href="#seccion2">Fechas</a></button>
+                <!-- <button class="boton1"><a href="#seccion2">Fechas</a></button> -->
             </div>      
         </div>
 
@@ -72,153 +72,94 @@
                     <div class="calendario">
                         <h1>HORARIO OTOÑO</h1>
                         <h2>Juegos de la temporada</h2>
-                        <div class="tabla">
-                            <div class="columna" id="columna1">
-                                <div class="fila" id="fila1">
-                                    <h3>SEPTIEMBRE</h3>
-                                </div>
-
-                                <div class="fila" id="fila2">
-                                    <p class="dia">01</p>
-                                </div>
-
-                                <div class="fila" id="fila3">
-                                    <p class="dia">08</p>      
-                                </div>
-
-                                <div class="fila" id="fila4">
-                                    <p class="dia">15</p>
-                                </div>
-
-                                <div class="fila" id="fila5">
-                                    <p class="dia">22</p>
-                                </div>
-
-                                <div class="fila" id="fila6">
-                                    <p class="dia">29</p>
-                                </div>  
-                            </div>
-
-                            <div class="columna" id="columna2">
-                                <div class="fila" id="fila1">
-                                    <h3>EQUIPOS</h3>
-                                </div>
-
-                                <div class="fila" id="fila2">
-                                    <p>U1 y U4</p>
-                                    <p>U3 y U2</p>
-                                </div> 
-
-                                <div class="fila" id="fila3">
-                                    <p>U5 y U6</p>
-                                    <p>U6 y U1</p>
-                                </div> 
-
-                                <div class="fila" id="fila4">
-                                    <p>U2 y U4</p>
-                                    <p>U3 y U5</p>
-                                </div>
-
-                                <div class="fila" id="fila5">
-                                    <p>U1 y U3</p>
-                                    <p>U2 y U6</p>
-                                </div> 
-
-                                <div class="fila" id="fila6">
-                                    <p>U4 y U5</p>
-                                </div>   
-                            </div>
-
-                            <div class="columna" id="columna3">
-                                <div class="fila" id="fila1">
-                                    <h3>UBICACIÓN</h3>
-                                </div>
-
-                                <div class="fila" id="fila2">
-                                    <p>AJ Katzenmaier</p>
-                                    <p>Greenbay</p>
-                                </div> 
-
-                                <div class="fila" id="fila3">
-                                    <p>Howard A Yeager</p>
-                                    <p>Marjorie P Hart</p>
-                                </div> 
-
-                                <div class="fila" id="fila4">
-                                    <p>North AJ Katzenmaier</p>
-                                </div>
-                                
-                                <div class="fila" id="fila5">
-                                    <p>South Howard A Yeager</p>
-                                </div>
-                                <div class="fila" id="fila6">
-                                    <p>Greenbay</p>
-                                </div>
-                            </div>
-
-                            <div class="columna" id="columna4">
-                                <div class="fila" id="fila1">
-                                    <h3>HORARIO</h3>
-                                </div>
-
-                                <div class="fila" id="fila2">
-                                    <p>9:30 A.M</p>
-                                    <p>1:00 PM</p>
-                                </div> 
-
-                                <div class="fila" id="fila3">
-                                    <p>9:30 A.M</p>
-                                    <p>1:00 PM</p>
-                                </div> 
-
-                                <div class="fila" id="fila4">
-                                    <p>9:30 A.M</p>
-                                    <p>1:00 PM</p>
-                                </div>
-                                
-                                <div class="fila" id="fila5">
-                                    <p>9:30 A.M</p>
-                                    <p>1:00 PM</p>
-                                </div>
-
-                                <div class="fila" id="fila6">
-                                    <p>9:30 A.M</p>
-                                    <p>1:00 PM</p>
-                                </div>
-                            </div>
-                        </div>
+                        <table>
+                            <tr class="head">
+                                <th rowspan="">SEPTIEMBRE</th>
+                                <th rowspan="">EQUIPOS</th>
+                                <th rowspan="">UBICACIÓN</th>
+                                <th rowspan="">HORARIO</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">01</td>
+                                <td rowspan="">U1 y U4</td>
+                                <td rowspan="">AJ Katzenmaier</td>
+                                <td rowspan="">9:30 A.M</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="">U3 y U2</td>
+                                <td rowspan="">Greenbay</td>
+                                <td rowspan="">1:00 PM</td>
+                            </tr>  
+                            <tr>
+                                <td rowspan="2">08</td>
+                                <td rowspan="">U5 y U6</td>
+                                <td rowspan="">Howard A Yeager</td>
+                                <td rowspan="">9:30 A.M</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="">U6 y U1</td>
+                                <td rowspan="">Marjorie P Hart</td>
+                                <td rowspan="">1:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">15</td>
+                                <td rowspan="">U2 y U4</td>
+                                <td rowspan="2">North AJ Katzenmaier</td>
+                                <td rowspan="">9:30 A.M</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="">U3 y U5</td>
+                                <td rowspan="">1:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">22</td>
+                                <td rowspan="">U1 y U3</td>
+                                <td rowspan="2">South Howard A Yeager</td>
+                                <td rowspan="">9:30 A.M</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="">U2 y U6</td>
+                                <td rowspan="">1:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="1">29</td>
+                                <td rowspan="">U4 y U5</td>
+                                <td rowspan="1">Greenbay</td>
+                                <td rowspan="">9:30 A.M</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-                <button class="boton1"><a href="#portada">Portada</a></button>
+                <!-- <button class="boton1"><a href="#portada">Portada</a></button> -->
             </div>      
         </div>
 
 
 
-        <div class="footer">
+        <footer class="footer">
             <div class="parte1">
-                <div class="fila">
+                <div class="columna">
                     <h1>Más sobre la compañía</h1>
-                        <div class="columna">
+                        <div class="fila">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum provident architecto necessitatibus. Saepe eum rem expedita, dolores maxime hic neque quod, quas eos aperiam facilis ad illo. Possimus, facere ipsam?</p>
                     </div>
                 </div>
         
-                <div class="fila">
+                <div class="columna">
                     <h1>Nuestras Redes Sociales </h1>
-                    <div class="columna rrss">
+                    <div class="fila" id="rrss">
                         <label>
                             <a href="#"><span class="icon-facebook2 facebook"></span><p>¡Siguenos en <b>Facebook</b>!</p></a>
                         </label>
                     </div>
                     
-                    <div class="columna">
+                    <div class="fila">
                         <span class="icon-instagram instagram"></span>
                             <label><a href="#"><p>¡Siguenos en <b>Instagram</b>!</p></a>
                         </label>
                     </div>
 
-                    <div class="columna">
+                    <div class="fila">
                         <span class="icon-twitter twitter"></span>
                         <label>
                             <a href="#"><p>¡Siguenos en <b>Twitter</b>!</p></a>
@@ -227,17 +168,17 @@
         
                 </div>
         
-                <div class="fila">
+                <div class="columna">
                     <h1>Información de contacto</h1>
-                    <div class="columna">
+                    <div class="fila">
                         <span class="icon-home3 inicio"></span>
                         <p>Av. Calle Equis #1111, Ygriega, Santiago, Chile.</p>
                     </div>
-                    <div class="columna">
+                    <div class="fila">
                         <span class="icon-phone telefono"></span>
                         <p>(+56) 9 1234 5678</p>
                     </div>
-                    <div class="columna">
+                    <div class="fila">
                         <span class="icon-envelop correo"></span>
                         <p><a href="mailto:nysl@.chisoccer.org">nysl@.chisoccer.org</a></p>
                     </div>
@@ -245,15 +186,15 @@
             </div>
 
             <div class="parte2">
-                <div class="copyright">
-                    <div for="">&#0169; 2020 Todos los derechos son reservados | <a href="">NYSL</a></div>
+                <div class="columna" id="copyright">
+                    <div>&#0169; 2020 Todos los derechos son reservados | <a href="">NYSL</a></div>
                 </div>
-                <div class="politica">
-                    <div for=""><a href="">| Información de compañía | </a></div>                    
-                    <div for=""><a href="">| Privación y politica | </a></div>
-                    <div for=""><a href="">| Términos y condiciones | </a></div>
+                <div class="columna" id="politica">
+                    <div><a href="">Información de compañía | </a></div>                    
+                    <div><a href="">Privación y politica | </a></div>
+                    <div><a href="">Términos y condiciones </a></div>
                 </div>
             </div>
-        </div>
+        </footer>
     </body>
 </html>
