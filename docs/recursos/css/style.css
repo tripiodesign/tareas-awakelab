@@ -64,14 +64,21 @@ a{
             
 /* Estilo de la Portada*/
 .portada{
-    position: relative;
     width: 100%;
+    height: 100vh;
+    max-height: 100%;
+    position: relative;
+    background-image: url('../img/design1_image1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-    .portada img{
+    /* .portada img{
         width: 100%;
         height: 100vh;
         max-height: 105%;
-    }
+    } */
+
     /* button{
         position: absolute;
         width: 80px;
@@ -216,7 +223,7 @@ footer{
     background-color: red;
 }
 .fila:hover span{
-    color: ;
+    color: black;
 }
     .parte1{
         width: 90%;
