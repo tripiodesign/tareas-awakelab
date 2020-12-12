@@ -3,16 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 1em;
+    color: #f2d1a8;
+}
+* a{
+    color: #ebebeb;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #003459;
+    background-color: #669b7c;
 }
 a{
     text-decoration: none;
-    color: black;
 }
 .encabezado{
     width: 100vw;
@@ -21,8 +24,8 @@ a{
     z-index: 100;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    background-color: rgba(255, 255, 255, .1);
-    box-shadow: 2px 2px rgba(90, 94, 94, .3);
+    /* background-color: rgba(255, 255, 255, .1); */
+    /* box-shadow: 2px 2px rgba(90, 94, 94, .3); */
 }
     .titulo{
         padding: 10px;
@@ -45,35 +48,51 @@ a{
                 padding: 5px 10px;
                 font-size: .8em;
                 transition: .3s;
+                box-shadow: none;
             }
             .menu ul li:hover{
-                background-color: rgb(2, 195, 154);
+                background-color: #f2d1a8;
                 transform: scale(1.05);
                 border-radius: 5px;
+                border: 1px dashed #ebebeb;
+                box-shadow: 2px 2px gray;
             }
-
+                .menu ul li:hover a{
+                    color: #557669;
+                }
+            
 /* Estilo de la Portada*/
 .portada{
     position: relative;
+    width: 100%;
 }
     .portada img{
         width: 100%;
-        height: 100%;
+        height: 100vh;
+        max-height: 100%;
     }
     button{
         position: absolute;
-        width: 100px;
-        height: 100px;
-        top: 50%;
-        left: 70%;
-        background-color: rgba(255, 255, 255, 0.3);
+        width: 80px;
+        height: 80px;
+        top: 70%;
+        left: 90%;
+        background-color: rgba(0, 0, 0, 0.2);
         border-radius: 50%;
         border: none;
         outline: none;
-        transition: .3s linear;  
-    }
+        transition: .3s linear; 
+        font-family: 'East Sea Dokdo', cursive;
+        font-size: 1.7em;    
+        box-shadow: 3px 3px none;
+    }   
+        button a{
+            transition: .3s linear;
+        }
         button:hover{
-            transform: scale(1.05);
+            transform: scale(1.1);
+            background-color: rgba(0, 0, 0, 0.5); 
+            box-shadow: 2px 2px #303e27;           
         }
 
 /* Estilos de la primera seccion */
@@ -82,4 +101,130 @@ a{
     max-width: 100%;
     height: 100vh;
     max-height: 100%;
+    margin: auto;
+    margin-top: -4px;
+    position: relative;
 }
+    .titulo-seccion{
+        width: 100%;
+        background-color: #028090;
+        padding: 10px;
+        text-align: center;
+        font-size: 1.4em;
+    }
+        .titulo-seccion a{
+            color: white;
+        }
+    .contenido{
+        /* background-color: #c2c2c2; */
+        width: 90%;
+        height: 100%;
+        max-height: 92.6vh;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+        .contenido img{
+            width: 100%;
+            max-width: 30vw;
+            margin: auto;
+            margin-right: 10px;
+            /* background-color: green; */
+        }
+        .subseccion{
+            margin: auto;
+            margin-left: 10px;
+            width: 500px;
+            max-width: 70%;
+            /* height: 100%; */
+            /* background-color: red; */
+        }
+            .eventos{
+                background-color: #557669;
+                color: white;
+                border: 1px dashed #ebebeb;
+            }
+                .eventos h2{
+                    padding: 10px;
+                    text-align: center;
+                    background-color: #028090;
+                    font-size: 2.5em;
+                    font-weight: lighter;
+                    font-family: 'East Sea Dokdo', cursive;
+                }
+                .evento{
+                    padding: 20px;
+                }
+                    .evento h3{
+                        margin-bottom: 7px;
+                    }
+    
+/* Segunda seccion */
+#subseccion2{
+    width: 100%;
+    margin: auto;
+}
+    .calendario{
+        background-color: #405983;
+        width: 100%;
+        border-bottom: 1px outset#ebebeb;
+        /* max-width: 800px; */
+    }
+        .calendario h1{
+            padding: 20px; 
+            background-color: #405983;
+            border: 2px outset #ebebeb;
+            font-size: 1.2em;
+        }
+        .calendario h2{
+            padding: 20px;
+            background-color: #31bccc;
+            color: #303e27;
+            text-align: right;
+            border-right: 1px outset #ebebeb;
+            border-bottom: 1px outset #ebebeb;
+            border-left: 1px outset #ebebeb;
+            font-size: 1.1em;
+        }
+        .tabla{
+            border-right: 1px outset #ebebeb;
+            border-bottom: 1px outset #ebebeb;
+            border-left: 1px outset #ebebeb;
+            display: grid;
+            grid-template-columns: repeat(4, 25%);        
+            padding: 20px;
+        }
+            .tabla h3{
+                color: #6f3826;
+            }
+            .columna{
+                display: grid;
+                grid-template-rows: repeat(6, auto);
+                background-color: #028090;
+            }
+                .fila {
+                    margin: auto;
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    min-height: 60px;
+                    padding: 10px;
+                    border: 1px dashed #084d68;
+                }
+                .fila:hover{
+                    background-color: #f2d1a8;
+                }
+                .fila:hover p{
+                    color: #1b5549;                
+                }
+                #columna1 p{
+                    background-color: #1b5549;
+                    width: 36px;
+                    height: 36px;
+                    margin: auto;
+                    padding: 10px;
+                    border-radius: 50%;
+                    color: #ffdd83;                    
+                }
+                    
