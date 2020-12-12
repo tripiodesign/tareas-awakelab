@@ -65,6 +65,7 @@ a{
 /* Estilo de la Portada*/
 .portada{
     width: 100%;
+    max-width: 1500px;
     height: 100vh;
     max-height: 100%;
     position: relative;
@@ -191,9 +192,10 @@ a{
     /* Diseño de la tabla del calendario */
         table{
             text-align: center;
-            width: 90%;
+            width: 100%;
+            max-width: 1200px;
             margin: auto;
-            font-size: .8em;
+            font-size: .75em;
         }
             table tr th{
                 padding: 10px;
