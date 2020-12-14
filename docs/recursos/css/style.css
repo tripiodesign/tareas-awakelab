@@ -126,7 +126,8 @@ a{
             color: #ebebeb;
         }
     #boton3{
-        bottom: 23%;
+        /* bottom: 10%; */
+        margin-bottom: 80px;
     }
 
     .titulo-seccion{
@@ -283,7 +284,7 @@ footer{
             float: left;
             width: 50%;
             height: 100%;
-            background-color: #943939;
+            background-color: #6a2634;
         }
             .parte1 .columna h1{
                 padding: 2px;
@@ -292,28 +293,42 @@ footer{
                 background-color: #353e55;
             }
             .parte1 .fila{
-                background-color: #943939;
                 width: 300px;
                 max-width: 90%;
-                height: 100%;
-                margin: auto;
-                font-size: .6em;
+                margin: 0 auto;
+                padding: 5px;
             }
-                .fila p{
-                    padding: 2px;
+                .parte1 a{
+                    font-size: .65em;
                 }
-                .fila b{
-                    font-size: 100%;
+                    .parte1 .fila span{
+                        margin-right: 5px;
+                    }
+                .parte1 .fila b{
                     color: #f2d1a8;
                 }
-                .fila a{
-                    padding: 3px;
+            .parte1 .fila:hover{
+                background-color: #f2d1a8;
+            }
+                .parte1 .fila:hover a{
+                    color: #557669;
+                    font-weight: bold;
+                    font-size: .75em;
                 }
-                    .fila span{
-                        margin-right: 5px;
-                        font-size: 120%;
+                .parte1 .fila:hover a{
+                    color: #557669;
+                    font-weight: bold;
+                }
+                    .parte1 .fila:hover span{
+                        color: #557669;
+                        font-size:em;
                     }
-                .fila
+                        .parte1 .fila:hover b{
+                            color: #557669;
+                            font-weight: bold;
+                        }
+                
+            
     /* Diseño de parte inferior del pie de pagina */
     .parte2{
         width: 100vw;
