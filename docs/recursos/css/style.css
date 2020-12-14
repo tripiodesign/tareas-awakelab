@@ -183,33 +183,37 @@ a{
                     text-align: center;
                     background-color: #353e55;
                     padding: 5px;
-                    font-size: 1.4em;
+                    /* font-size: 1.2em; */
                 }
                 .subsec-index#subseccion1 .articulo{
                     width: 100%;
                     max-width: 400px;
-                    margin: 20px auto;
+                    margin: 8px auto;
                     padding: 5px;
                     border-top: 1px dashed #ebebeb;
                     border-bottom: 1px dashed #ebebeb;
                 }
-                    .subsec-index#subseccion1 .articulo h3{
-                        font-size: 1.2em;
+                    /* .subsec-index#subseccion1 .articulo h3{
+                        font-size: 1em;
                         
-                    }
+                    } */
                     .subsec-index#subseccion1 .articulo p{
-                        font-size: .9em;
+                        font-size: .8em;
                     }
 
 /* Segunda seccion - index */
+.sec-index#seccion2{
+    display: inline-flex;
+}
     .calendario{
         background-color: #943939;
-        width: 1000px;
+        width: 700px;
         max-width: 90%;
-        height: 320px;
-        max-height: 90%    ;
+        max-height: 90%;
         border: 3px outset #5e8a78;
         margin: auto;
+        /* display: flex;
+        flex-direction: column; */
     }
         .calendario h1{
             padding: 5px 20px; 
@@ -330,7 +334,7 @@ a{
 .sec-rules{
     height: 100%;
     max-height: auto;
-    padding: 30px 0;
+    padding: 50px 0;
 }
     .subsec-rules{
         width: 1000px;
