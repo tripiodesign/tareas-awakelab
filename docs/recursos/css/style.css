@@ -3,39 +3,56 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 1em;
+    font-family: 'Andika New Basic';
     color: #f2d1a8;
     transition: .2s linear;
 }
 * a{
     color: #ebebeb;
 }
+h1, h2, h3, h4, h5, h6{
+    color: #ebebeb;
+    font-weight: lighter;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 1.5em;
+}
 html{
     scroll-behavior: smooth;
+    transition: .5s linear;
 }
 body{
     background-color: #353e55;
+    width: 100%;
 }
 a{
     text-decoration: none;
 }
+
+.cuerpo{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
 .encabezado{
-    width: 100vw;
-    max-width: 100%;
+    width: 100%;
     position: fixed;
     z-index: 100;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    /* background-color: rgba(255, 255, 255, .1); */
     box-shadow: 2px 2px rgba(90, 94, 94, .3);
+    background-color: #6a2634;
 }
     .titulo{
-        padding: 10px;
-        font-size: 1.2em;
+        padding: 5px;
+        float: left;
+    }
+    .titulo h1{
+        font-size: .8em;
+        font-family: 'Andika New Basic';
+        color: #ebebeb;
     }
     .menu{
-        max-width: 50%;
-        margin: auto;
-        /* background-color: rgba(255, 255, 255, .05); */
+
+        float: right;
     }
         .menu ul{
             list-style: none;
@@ -46,17 +63,21 @@ a{
             .menu ul li{
                 min-width: 70px;
                 text-align: center;
-                padding: 5px 10px;
-                font-size: .8em;
+                padding: 3px 7px;
+                font-size: .75em;
                 transition: .3s;
-                box-shadow: none;
+                box-shadow: 3px 3px #6a2634;
+                border: 1px dashed #6a2634;
             }
+                .menu ul li a{
+                    color: #ebebeb;
+                }
             .menu ul li:hover{
                 background-color: #f2d1a8;
                 transform: scale(1.05);
                 border-radius: 5px;
                 border: 1px dashed #ebebeb;
-                box-shadow: 2px 2px gray;
+                box-shadow: 3px 3px #557669;
             }
                 .menu ul li:hover a{
                     color: #557669;
@@ -65,7 +86,6 @@ a{
 /* Estilo de la Portada*/
 .portada{
     width: 100%;
-    max-width: 1500px;
     height: 100vh;
     max-height: 100%;
     position: relative;
@@ -73,107 +93,131 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-position-y: 10px;
+    display: flex;
+    position: relative;
 }
-    /* .portada img{
-        width: 100%;
-        height: 100vh;
-        max-height: 105%;
-    } */
 
-    /* button{
+    button{
         position: absolute;
-        width: 80px;
-        height: 80px;
-        top: 80%;
-        left: 80%;
-        background-color: rgba(0, 0, 0, 0.2);
+        width: 40px;
+        max-width: 10%;
+        height: 40px;
+        max-height: 8%;
+        right: 1%;
+        bottom: 10%;
+        background-color: #f2d1a8;
         border-radius: 50%;
-        border: none;
         outline: none;
-        transition: .3s linear; 
-        font-family: 'East Sea Dokdo', cursive;
-        font-size: 1.7em;    
-        box-shadow: 3px 3px none;
+        border: 1px dashed #f2d1a8;
+        box-shadow: none;
     }   
         button a{
-            transition: .3s linear;
+            margin: auto;
         }
+            button span{
+                color: #557669;
+            }
         button:hover{
             transform: scale(1.1);
-            background-color: rgba(0, 0, 0, 0.5); 
-            box-shadow: 2px 2px #303e27;           
-        } */
+            background-color: #353e55; 
+        }
+        button:hover span{
+            color: #ebebeb;
+        }
+    #boton3{
+        bottom: 23%;
+    }
 
+    .titulo-seccion{
+        width: 100%;
+        background-color: #6a2634;
+        padding: 5px;
+        text-align: center;
+        font-size: 1em;
+        margin: auto;
+        margin-bottom: 0;
+        bottom: 0;
+    }
 /* Estilos de la primera seccion */
+    .titulo-seccion h2{
+        color: #ebebeb;
+    }
+
 .seccion{
     width: 100%;
     height: 100vh;
     max-height: 100%;
-    margin: auto;
     position: relative;
+    /* background-color: red; */
 }
-    .titulo-seccion{
-        width: 100%;
-        background-color: #028090;
-        padding: 10px;
-        text-align: center;
-        font-size: 1.4em;
-    }
-        .titulo-seccion a{
-            color: white;
-        }
     .contenido{
-        /* background-color: #c2c2c2; */
-        width: 90%;
-        height: 100%;
-        max-height: 92.6vh;
-        margin: 0 auto;
-        padding: 10px;
+        max-width: 85%;
+        height: 1000px;
+        max-height: 94%;
+        padding: 10px;        
         display: flex;
-        justify-content: space-evenly;
+        margin: auto;
     }
-        .contenido img{
+    .caja-logo{
+        max-width: 300px;
+        max-height: 300px;
+        margin: auto;
+    }
+        .caja-logo img{ 
             width: 100%;
-            max-width: 30vw;
-            margin: auto;
-            margin-right: 10px;
-            /* background-color: green; */
+            height: 100%;
+            display: block;
         }
         .subseccion{
+            width: 60%;
+            max-width: 700px;
             margin: auto;
-            margin-left: 10px;
-            width: 100%;
         }
             .eventos{
-                background-color: #b36458;
+                background-color: #943939;
                 color: white;
-                border: 1px outset #ebebeb;
+                border: 3px outset #ebebeb;
+                margin-left: 5px;
             }
                 .eventos h2{
                     padding: 5px;
                     text-align: center;
-                    background-color: #028090;
-                    font-size: 2.5em;
-                    font-weight: lighter;
-                    font-family: 'East Sea Dokdo', cursive;
+                    background-color: #353e55;
+                    font-size: 1.7em;
+                    color: #ebebeb;
                 }
                 .evento{
-                    padding: 10px;
+                    box-sizing: border-box;
+                    padding: 5px;
+                    width: 400px;
+                    max-width: 90%;
+                    margin: 0 auto;
                 }
                     .evento h3{
                         margin-bottom: 7px;
                     }
+                    .evento p{
+                        font-size: .7em;
+                    }
     
 /* Segunda seccion */
-#subseccion2{
-    margin: auto;
+#seccion2 .contenido{
+    width: 1000px;
+    max-width: 100%;
+    height: 800px;
+    max-height: 80%;
 }
+/* #subseccion2{
+    width: 10px auto;
+} */
     .calendario{
-        background-color: #b36458;
-        width: 100%;
-        max-width: 600px;
+        background-color: #943939;
+        width: 1000px;
+        max-width: 100%;
+        /* height: 800px; */
+        border: 3px outset #ebebeb;
         margin: auto;
-        border: 2px outset #ebebeb;
     }
         .calendario h1{
             padding: 10px 20px; 
@@ -184,70 +228,122 @@ a{
         .calendario h2{
             padding: 10px 20px;
             background-color: #353e55;
-            /* color: #303e27; */
             text-align: right;
-            font-size: 1.1em;
+            font-size: 1.3em;
             border-bottom: 1px outset #ebebeb;
         }
     /* Diseño de la tabla del calendario */
         table{
             text-align: center;
             width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            font-size: .75em;
+            font-size: .68em;
         }
             table tr th{
-                padding: 10px;
-                border: 1px dashed #b36458;
+                padding: 1px;
+                border: 2px dashed #943939;
             }
                 table:hover .head{
-                    background-color: #e0e7b8;
+                    background-color: #f2d1a8;
                     border: 1px dashed #353e55;
+                    transition: .7s linear;
                 }
                 table:hover .head th{
-                    color: #353e55;
+                    color: #557669;
 
                 }
             table tr td{
-                padding: 5px;
-                border: 1px dashed #b36458;
+                height: 10px;
+                padding: 1px;
+                border: 2px dashed #943939;
             }
                 table tr td:hover{
-                    color: #353e55;
-                    background-color: #e0e7b8;
+                    color: #557669;
+                    background-color: #f2d1a8;
                     border: 1px dashed #353e55;
                 }
 
 /* Estilos del pie de pagina */
 footer{
     width: 100%;
-    background-color: red;
+    /* background-color: #353e55; */
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    border-top: 1px dashed #f2d1a8;
 }
-.fila:hover span{
-    color: black;
-}
+
+ /* Diseñon de la parte superior del pie de pagina */
     .parte1{
-        width: 90%;
+        width: 100vw;
+        max-width: 100%;
         margin: auto;
-        /* display: inline-block; */
-        background-color: blue;
-    }
+        position: relative;
+        }
         .parte1 .columna{
             float: left;
-            width: 33.3%;
-        }
-    .parte2{
-        width: 100%;
-        display: inline-block;
-
-        background-color: green;
-    }
-        .parte2 .columna{
-            float: left;
             width: 50%;
+            height: 100%;
+            background-color: #943939;
+        }
+            .parte1 .columna h1{
+                padding: 2px;
+                text-align: center;
+                font-size: 1.5em;
+                background-color: #353e55;
+            }
+            .parte1 .fila{
+                background-color: #943939;
+                width: 300px;
+                max-width: 90%;
+                height: 100%;
+                margin: auto;
+                font-size: .6em;
+            }
+                .fila p{
+                    padding: 2px;
+                }
+                .fila b{
+                    font-size: 100%;
+                    color: #f2d1a8;
+                }
+                .fila a{
+                    padding: 3px;
+                }
+                    .fila span{
+                        margin-right: 5px;
+                        font-size: 120%;
+                    }
+                .fila
+    /* Diseño de parte inferior del pie de pagina */
+    .parte2{
+        width: 100vw;
+        max-width: 100%;
+        height: 100%;
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        border-top: 1px dashed #f2d1a8;
+    }
+        .parte2 a{
+            color: #ebebeb;
+        }
+        .parte2 .columna{
+            margin: 0 10px;
+            padding: 2px;
+            display: inline-flex;
+            font-size: .6em;
+        }
+            .parte2 .columna p{
+                margin: auto;
+                color: #ebebeb;
+            }
+        #copyright{
+            float: right;
+            margin-left: 10px;
         }
         #politica{
+            float: left;
             display: flex;
             justify-content: center;
         }
+    
