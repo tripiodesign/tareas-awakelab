@@ -5,20 +5,17 @@
     font-size: 1em;
     font-family: 'Andika New Basic';
     color: #f2d1a8;
-    transition: .2s linear;
+    border: none;
 }
 * a{
     color: #ebebeb;
+    transition: .2s linear;
 }
 h1, h2, h3, h4, h5, h6{
     color: #ebebeb;
-    font-weight: lighter;
-    font-family: 'East Sea Dokdo', cursive;
-    font-size: 1.5em;
 }
 html{
     scroll-behavior: smooth;
-    transition: .5s linear;
 }
 body{
     background-color: #353e55;
@@ -30,6 +27,7 @@ a{
 
 .cuerpo{
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -65,7 +63,7 @@ a{
                 text-align: center;
                 padding: 3px 7px;
                 font-size: .75em;
-                transition: .3s;
+                transition: .2s;
                 box-shadow: 3px 3px #6a2634;
                 border: 1px dashed #6a2634;
             }
@@ -94,8 +92,8 @@ a{
     background-position: center;
     background-size: cover;
     background-position-y: 10px;
-    display: flex;
     position: relative;
+    display: flex;
 }
 
     button{
@@ -104,8 +102,8 @@ a{
         max-width: 10%;
         height: 40px;
         max-height: 8%;
-        right: 1%;
-        bottom: 30%;
+        right: 2%;
+        bottom: 10%;
         background-color: #f2d1a8;
         border-radius: 50%;
         outline: none;
@@ -126,112 +124,109 @@ a{
         button:hover span{
             color: #ebebeb;
         }
-    /* #boton3{
-        bottom: 10%;
-        margin-bottom: 170px;
-    } */
-
+    
+/* Estilos del titulo de la seccion */
     .titulo-seccion{
         width: 100%;
         background-color: #6a2634;
-        padding: 5px;
         text-align: center;
-        font-size: 1em;
+        padding: 5px;
         margin: auto;
         margin-bottom: 0;
         bottom: 0;
+        position: absolute;
     }
 /* Estilos de la primera seccion */
     .titulo-seccion h2{
         color: #ebebeb;
+        font-size: 1.1em;
     }
 
 .seccion{
     width: 100%;
-    height: 100vh;
+    height: 94vh;
     max-height: 100%;
     position: relative;
-    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-    .contenido{
-        max-width: 85%;
-        height: 1000px;
-        max-height: 94%;
-        padding: 10px;        
-        display: flex;
-        margin: auto;
-    }
-    .caja-logo{
-        max-width: 300px;
-        max-height: 300px;
-        margin: auto;
-    }
-        .caja-logo img{ 
+
+/* Estilos de pagina index */
+.sec-index#seccion1{
+    display: grid;
+    grid-template-columns: 40% 45%; /* repeat(2, 50%) */
+}
+        .caja-logo{
             width: 100%;
-            height: 100%;
-            display: block;
-        }
-        .subseccion{
-            width: 60%;
-            max-width: 700px;
+            max-width: 400px;
             margin: auto;
+            border-radius: 50%;
+            box-shadow: 3px 3px rgba(148, 57, 57, 0.6);
         }
-            .eventos{
-                background-color: #943939;
-                color: white;
-                border: 3px outset #ebebeb;
-                margin-left: 5px;
+            .caja-logo img{ 
+                width: 100%;
+                display: block;
             }
-                .eventos h2{
-                    padding: 5px;
+        .subsec-index{
+            margin: auto;
+            width: 700px;
+            max-width: 90%;
+            
+        }
+            .subsec-index#subseccion1 .articulos{
+                background-color: #943939;
+                border: 3px outset #5e8a78;
+            }
+            .subsec-index#subseccion1 .articulos h2{
                     text-align: center;
                     background-color: #353e55;
-                    font-size: 1.7em;
-                    color: #ebebeb;
-                }
-                .evento{
-                    box-sizing: border-box;
                     padding: 5px;
-                    width: 400px;
-                    max-width: 90%;
-                    margin: 0 auto;
+                    /* font-size: 1.2em; */
                 }
-                    .evento h3{
-                        margin-bottom: 7px;
+                .subsec-index#subseccion1 .articulo{
+                    width: 100%;
+                    max-width: 400px;
+                    margin: 8px auto;
+                    padding: 5px;
+                    border-top: 1px dashed #ebebeb;
+                    border-bottom: 1px dashed #ebebeb;
+                }
+                    /* .subsec-index#subseccion1 .articulo h3{
+                        font-size: 1em;
+                        
+                    } */
+                    .subsec-index#subseccion1 .articulo p{
+                        font-size: .8em;
                     }
-                    .evento p{
-                        font-size: .7em;
-                    }
-    
-/* Segunda seccion */
-#seccion2 .contenido{
-    width: 1000px;
-    max-width: 100%;
-    height: 800px;
-    max-height: 80%;
+
+/* Segunda seccion - index */
+.sec-index#seccion2{
+    display: inline-flex;
 }
-/* #subseccion2{
-    width: 10px auto;
-} */
     .calendario{
         background-color: #943939;
-        width: 1000px;
-        max-width: 100%;
-        /* height: 800px; */
-        border: 3px outset #ebebeb;
+        width: 700px;
+        max-width: 90%;
+        max-height: 90%;
+        border: 3px outset #5e8a78;
         margin: auto;
+        /* display: flex;
+        flex-direction: column; */
     }
         .calendario h1{
-            padding: 10px 20px; 
+            padding: 5px 20px; 
             background-color: #353e55;
-            font-size: 1.2em;
+            font-size: 1em;
             border-bottom: 2px outset #ebebeb;
         }
         .calendario h2{
-            padding: 10px 20px;
+            padding: 5px 20px;
             background-color: #353e55;
             text-align: right;
-            font-size: 1.3em;
+            font-size: 1em;
+            font-weight: lighter;
             border-bottom: 1px outset #ebebeb;
         }
     /* Diseño de la tabla del calendario */
@@ -239,15 +234,20 @@ a{
             text-align: center;
             width: 100%;
             font-size: .68em;
+            margin: auto;
         }
             table tr th{
                 padding: 1px;
-                border: 2px dashed #943939;
+                border: 1px dashed #943939;
+                transition: .3s;
+            }
+            table .head{
+                transition: .3s;
             }
                 table:hover .head{
                     background-color: #f2d1a8;
                     border: 1px dashed #353e55;
-                    transition: .7s linear;
+                    transition: .5s linear;
                 }
                 table:hover .head th{
                     color: #557669;
@@ -256,7 +256,7 @@ a{
             table tr td{
                 height: 10px;
                 padding: 1px;
-                border: 2px dashed #943939;
+                border: 1px dashed #943939;
             }
                 table tr td:hover{
                     color: #557669;
@@ -264,35 +264,150 @@ a{
                     border: 1px dashed #353e55;
                 }
 
+
+
+/* Estilos pagina about */
+    /* Estilo de seccion1 - about */
+.subsec-about{
+    width: 1200px;
+    max-width: 90%;
+}
+    .subsec-about#subseccion1 .articulos{
+        background-color: #943939;
+        border: 3px outset #5e8a78;
+    }
+    .subsec-about#subseccion1 .articulos h2{
+            text-align: center;
+            background-color: #353e55;
+            padding: 5px;
+            font-size: 1.2em;
+        }
+        .subsec-about#subseccion1 .articulo{
+            width: 900px;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 5px;
+            border-top: 1px dashed #ebebeb;
+            border-bottom: 1px dashed #ebebeb;
+        }
+            .subsec-about#subseccion1 .articulo h3{
+                font-size: 1em;
+                
+            }
+            .subsec-about#subseccion1 .articulo p{
+                font-size: .78em;
+            }
+
+/* Estilos pagina contact */
+    /* Estilo de seccion1 - contact */
+.subsec-contact{
+    width: 1200px;
+    max-width: 90%;
+}
+    .subsec-contact#subseccion1 .articulos{
+        background-color: #943939;
+        border: 3px outset #5e8a78;
+    }
+    .subsec-contact#subseccion1 .articulos h2{
+            text-align: center;
+            background-color: #353e55;
+            padding: 5px;
+            font-size: 2em;
+        }
+        .subsec-contact#subseccion1 .articulo{
+            width: 900px;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 5px;
+            border-top: 1px dashed #ebebeb;
+            border-bottom: 1px dashed #ebebeb;
+        }
+            .subsec-contact#subseccion1 .articulo h3{
+                font-size: 1.7em;
+                
+            }
+            .subsec-contact#subseccion1 .articulo p{
+                font-size: .8em;
+            }
+/* Estilos pagina rules */
+    /* Estilo de seccion1 - rules */
+.sec-rules{
+    height: 100%;
+    max-height: auto;
+    padding: 50px 0;
+}
+    .subsec-rules{
+        width: 1000px;
+        max-width: 90%;
+    }
+        .subsec-rules article h1,h2,h3,h4,h5{
+            font-family: 'Andika New Basic';
+            text-align: center;
+        }
+        .subsec-rules article h2{
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+        .subsec-rules article h3{
+            font-size: 1.2em;
+        }
+        .subsec-rules article h4{
+            font-size:1em;
+        }
+        .subsec-rules article ul{
+            list-style-type: square;
+            font-weight: bold;
+        } 
+            .subsec-rules article ul li{
+                font-weight: lighter;
+                margin-left: 30px;
+            }
+        .subsec-rules article ol{
+            font-weight: bold;
+        }
+            .subsec-rules article ol li{
+                font-weight: lighter;
+                margin-left: 30px;
+            }
+                .subsec-rules article ol li ol{
+                    list-style-type: georgian;
+                }
+        .subsec-rules article dl dt{
+            font-weight: bold;
+        }
+        .subsec-rules article dl dd{
+            font-weight: lighter;
+        }
+            .subsec-rules article dd, li{
+                font-size: .9em;
+            }
+        
 /* Estilos del pie de pagina */
 footer{
     width: 100%;
-    max-height: 20%;
-    /* background-color: #353e55; */
-    position: absolute;
-    margin: 0 auto;
+    height: 10%;
+    margin-bottom: 0;
     bottom: 0;
     border-top: 1px dashed #f2d1a8;
+    background-color: #6a2634;
 }
 
  /* Diseñon de la parte superior del pie de pagina */
     .parte1{
-        width: 100vw;
-        max-width: 100%;
+        width: 100%;
         margin: auto;
         position: relative;
-        }
+    }
         .parte1 .columna{
             float: left;
             width: 50%;
-            height: 100%;
-            background-color: #6a2634;
+            background-color: #353e55;
         }
             .parte1 .columna h1{
                 padding: 2px;
                 text-align: center;
-                font-size: 1.5em;
-                background-color: #353e55;
+                font-size: .8em;
+                background-color: #6a2634;
             }
             .parte1 .fila{
                 width: 300px;
@@ -301,7 +416,7 @@ footer{
                 padding: 5px;
             }
                 .parte1 a{
-                    font-size: .65em;
+                    font-size: .7em;
                 }
                     .parte1 .fila span{
                         margin-right: 5px;
@@ -328,24 +443,23 @@ footer{
                         .parte1 .fila:hover b{
                             color: #557669;
                             font-weight: bold;
-                        }
-                
-            
+                        }   
     /* Diseño de parte inferior del pie de pagina */
     .parte2{
-        width: 100vw;
-        max-width: 100%;
-        height: 100%;
-        display: inline-block;
-        justify-content: center;
+        width: 100%;
         text-align: center;
         border-top: 1px dashed #f2d1a8;
+        position: relative;
+        background-color: #6a2634;
+        display: flex;
     }
         .parte2 a{
             color: #ebebeb;
         }
         .parte2 .columna{
-            margin: 0 10px;
+            background-color: #6a2634;
+            width: 100%;
+            max-width: 674.5px;
             padding: 2px;
             display: inline-flex;
             font-size: .6em;
@@ -354,12 +468,11 @@ footer{
                 margin: auto;
                 color: #ebebeb;
             }
-        #copyright{
+        /* #copyright{
             float: right;
-            margin-left: 10px;
-        }
+        } */
         #politica{
-            float: left;
+            /* float: left; */
             display: flex;
             justify-content: center;
         }

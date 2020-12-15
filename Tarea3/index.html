@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimun-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -27,6 +27,7 @@
             <ul>
                 <li><a href="index.html" >Novedades</a></li>
                 <li><a href="about.html#seccion1" >NYSL</a></li>
+                <li><a href="rules.html#ts1" >Reglas</a></li>
                 <li><a href="contact.html#seccion1" >Contacto</a></li>
             </ul>
         </div>
@@ -35,48 +36,44 @@
 <!-- Portada de pagina-->
     <div class="portada" id="portada">
         <a href="#seccion1"><button id="boton1"><span class="icon-arrow-down2"></span><!-- Eventos --></button></a>
-        <div class="titulo-seccion" id=""><!-- Titulo de seccion -->
-            <a href="#seccion1"><h2>PROXIMOS EVENTOS</h2></a>            
+        <div class="titulo-seccion" id="ts1"><!-- Titulo de seccion -->
+            <a href="#ts1"><h2>PROXIMOS EVENTOS</h2></a>            
         </div> 
     </div>
 
 <!-- inicio del contenido -->
-    <div class="seccion" id="seccion1">  
-        <div class="contenido" ><!-- contenido de la seccion -->
-            <div class="caja-logo">
-                <img src="recursos/img/nysl_logo.png" alt=""><!-- Logo-->
-            </div>
+    <div class="seccion sec-index" id="seccion1">  
+        <div class="caja-logo">
+            <img src="recursos/img/nysl_logo.png" alt=""><!-- Logo-->
+        </div>
 
-            <aside class="subseccion"><!-- primera subseccion-->
-                <div class="eventos">
-                    <h2>Calendario de eventos</h2>
+        <div class="subseccion subsec-index" id="subseccion1"><!-- primera subseccion-->
+            <div class="articulos">
+                <h2>Eventos</h2>
 
-                    <div class="evento">
-                        <h3>Agosto 4</h3>
-                        <p>Recaudación <b>NYSL</b>.</p>
-                    </div>
-                    
-                    <div class="evento">
-                        <h3>Agosto 16</h3>
-                        <p>Inicio de temporada: Conocer a los equipos.</p>
-                    </div>
-
-                    <div class="evento">
-                        <h3>Septiembre 1</h3>
-                        <p>Primer juego de la temporada. (Consultar el <a href="#seccion2">calendario</a> del juego para obtener más información)</p>
-                    </div>
+                <div class="articulo">
+                    <h3>Agosto 4</h3>
+                    <p>Recaudación <b>NYSL</b>.</p>
                 </div>
-            </aside>
-        </div> 
-        <a href="#seccion2"><button id="boton1"><span class="icon-arrow-down2"></span><!-- Fechas --></button></a>
-        <div class="titulo-seccion"><!--Titulo de seccion-->
-            <a href="#seccion2"><h2>CALENDARIO DEPORTIVO</h2></a>            
-        </div>     
+                
+                <div class="articulo">
+                    <h3>Agosto 16</h3>
+                    <p>Inicio de temporada: Conocer a los equipos.</p>
+                </div>
+
+                <div class="articulo">
+                    <h3>Septiembre 1</h3>
+                    <p>Primer juego de la temporada. (Consultar el <a href="#seccion2">calendario</a> del juego para obtener más información)</p>
+                </div>
+            </div>
+        </div>
+        <a href="#ts2"><button id="boton1"><span class="icon-arrow-down2"></span><!-- Fechas --></button></a>
+        <div class="titulo-seccion" id="ts2"><!-- Titulo de seccion -->
+            <a href="#ts2"><h2>CALENDARIO DEPORTIVO</h2></a>            
+        </div>    
     </div>
 
-    <div class="seccion" id="seccion2"><!-- segunda seccion -->
-                    
-        <div class="contenido"><!-- contenido de la seccion-->
+    <div class="seccion" id="seccion2"><!-- segunda seccion -->          
             <div class="subseccion" id="subseccion2"><!-- seginda subseccion-->
                 <div class="calendario">
                     <h1>HORARIO OTOÑO</h1>
@@ -139,11 +136,10 @@
                     </table>
                 </div>
             </div>
-        </div>      
-        <a href="#portada"><button id="boton3"><span class="icon-arrow-up2"></span><!-- Portada --></button></a>
+            <a href="#portada"><button id="boton3"><span class="icon-arrow-up2"></span><!-- Portada --></button></a>
     </div>
 
-   
+<!-- Pie de pagina -->
     <footer class="footer">
         <div class="parte1">
             <!-- <div class="columna">
@@ -185,12 +181,12 @@
 
         <div class="parte2">
             <div class="columna" id="politica">
-                <p><a href="">Información de compañía |</a></p>                    
-                <p><a href="">Política y reglas de juego</a></p>
+                <p><a href="about.html#ts1">| Información de compañía |</a></p>
+                <p><a href="rules.html#ts1">| Política y reglas de juego |</a></p>
                 <!-- <p><a href="">Términos y condiciones </a></p> -->
             </div>
             <div class="columna" id="copyright">
-                <p>&#0169; 2020 Todos los derechos son reservados | <a href="">NYSL</a></p>
+                <p>&#0169; 2020 Todos los derechos son reservados | <a href="index.html">NYSL</a></p>
             </div>
         </div>
     </footer>
