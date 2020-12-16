@@ -51,17 +51,18 @@ a{
         color: #ebebeb;
     }
     .menu{
-
+        width: 500px;
+        max-width: 100%;
         float: right;
     }
         .menu ul{
             list-style: none;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             padding: 5px;
         }
             .menu ul li{
-                min-width: 70px;
+                min-width: 50px;
                 text-align: center;
                 padding: 3px 7px;
                 font-size: .75em;
@@ -82,6 +83,20 @@ a{
                 .menu ul li:hover a{
                     color: #557669;
                 }
+
+            .menu ul li#reg{
+                background-color: #8a0b0b;
+                border-color: #bf0a0a;
+                border-radius: 5px;
+                box-shadow: 2px 2px #525151;
+            }
+                .menu ul li#reg:hover{
+                    background-color: #df2525;
+                    border-color: #df2525;
+                }
+            .menu ul li#reg a{
+                color: #fff;
+            }
             
 /* Estilo de la Portada*/
 .portada{
@@ -101,9 +116,9 @@ a{
     button{
         position: absolute;
         width: 40px;
-        max-width: 15%;
+        max-width: 15.5%;
         height: 40px;
-        max-height: 6%;
+        max-height: 6.7%;
         right: 2%;
         bottom: 50px;
         background-color: #f2d1a8;
@@ -179,7 +194,7 @@ a{
             width: 700px;
             max-width: 90%;
             
-        }
+        }/* #6a2634 */
             .subsec-index#subseccion1 .articulos{
                 background-color: #943939;
                 border: 3px outset #5e8a78;
@@ -208,24 +223,26 @@ a{
 
 /* Segunda seccion - index */
 .sec-index#seccion2{
-    display: inline-flex;
+    display: flex;
 }
     .calendario{
         background-color: #943939;
-        width: 700px;
-        max-width: 90%;
+        width: 500px;
+        max-width: 100%;
         border: 3px outset #5e8a78;
         margin: auto;
         /* display: flex;
         flex-direction: column; */
     }
         .calendario h1{
+            width: 100%;
             padding: 5px 20px; 
             background-color: #353e55;
             font-size: 1em;
             border-bottom: 2px outset #ebebeb;
         }
         .calendario h2{
+            width: 100%;
             padding: 5px 20px;
             background-color: #353e55;
             text-align: right;
@@ -235,10 +252,11 @@ a{
         }
     /* Diseño de la tabla del calendario */
         table{
-            text-align: center;
             width: 100%;
+            text-align: center;
             font-size: .68em;
             margin: auto;
+            /* width: 100%; */
         }
             table tr th{
                 padding: 1px;
@@ -412,7 +430,7 @@ a{
         padding: 10px;
     }   
         .subsec-registro form h2{
-            color: #943939;
+            color: #6a2634;
             font-size: 1.2em;
             margin: 20px 0;
         }
@@ -430,7 +448,6 @@ a{
             color: rgba(255, 255, 255, .5);
             text-align: center;
             font-size: .8em;
-            background-color: #943939;
         }
     .subsec-registro form input[type="text"]{
         width: 100%;
@@ -499,7 +516,7 @@ a{
     }
     .subsec-registro form input[type="radio"]:checked + label {
     padding: 5px 15px;
-    background: #943939;
+    background-color: #6a2634;
     border-radius: 2px;
     color: #fff; 
     }
@@ -541,6 +558,7 @@ a{
             font-weight: lighter;
         }
         #permiso .opciones label,
+        #uniforme .opciones label,
         #escuela .opciones label,
         #posiciones .opciones label{
             width: 237px;
@@ -556,6 +574,7 @@ a{
             text-align: center;
         }
         #permiso .opciones label:hover,
+        #uniforme .opciones label:hover,
         #escuela .opciones label:hover,
         #posiciones .opciones label:hover{
             background-color: rgba(248, 252, 251, 0.7);
@@ -563,6 +582,7 @@ a{
             transform: scale(1.02);
         }
         #permiso .opciones label::before,
+        #uniforme .opciones label::before,
         #escuela .opciones label::before,
         #posiciones .opciones label::before{
             content: "";
@@ -576,16 +596,19 @@ a{
             border: 2px dashed indigo;
         }
         #permiso .opciones label:hover::before,
+        #uniforme .opciones label:hover::before,
         #escuela .opciones label:hover::before,
         #posiciones .opciones label:hover::before{
             border-color: #6a2634;
         }
         #permiso .opciones input[type="checkbox"],
+        #uniforme .opciones input[type="checkbox"],
         #escuela .opciones input[type="checkbox"],
         #posiciones .opciones input[type="checkbox"]{
             display: none;
         }
         #permiso .opciones input[type="checkbox"]:checked + label,
+        #uniforme .opciones input[type="checkbox"]:checked + label,
         #escuela .opciones input[type="checkbox"]:checked + label,
         #posiciones .opciones input[type="checkbox"]:checked + label{
             background-color: #6a2634;
@@ -596,6 +619,7 @@ a{
             transition: all .3s ease;
         }
         #permiso .opciones input[type="checkbox"]:checked + label::before,
+        #uniforme .opciones input[type="checkbox"]:checked + label::before,
         #escuela .opciones input[type="checkbox"]:checked + label::before,
         #posiciones .opciones input[type="checkbox"]:checked + label::before{
             display: none;
@@ -622,18 +646,44 @@ a{
         }
 
 
+        #uniforme .opciones label{
+            width: 150px;
+            max-width: 100%;
+        }
+        #uniforme .opciones label::before{
+            width: 20px;
+            height: 20px;
+            top: 3px ;
+        }
+        #uniforme .opciones input[type="radio"]:checked + label:hover{
+            background-color: #6a2634;  
+            color: #fff;
+            transform: none;    
+        }
+        #uniforme .opciones input[type="radio"]:checked + label::before{
+            content: "✓";
+            border: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            vertical-align: top;
+        }
+        #uniforme .opciones input[type="radio"]:checked + label{
+            padding-left: 10px;
+        }
+
+
+
         #permiso .opciones label{
             width: 500px;
             display: inline-block;
-            /* cursor: pointer; */
             position: relative;
             border-radius: 5px;
             margin: 10px auto;
-            font-size: .7em;
+            font-size: .75em;
             transition: all .5s ease;
             text-align: center;
-            padding: 10px;
-            padding-left: 30px;
+            padding: 15px;
+            padding-left: 50px;
         }
         #permiso .opciones label:hover{
             transform: none;
@@ -643,11 +693,11 @@ a{
         #permiso .opciones label::before{
             content: "";
             display: inline-block;
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             position: absolute;
-            top: 8px;
-            left: 20px;
+            top: 15px;
+            left: 25px;
             border-radius: 3px;
             border: 1px dashed indigo;
             cursor: pointer;
@@ -657,8 +707,8 @@ a{
             color: #fff;
             font-size: .7em;
             transition: all .3s ease;
-            padding: 10px;
-            padding-left: 30px;
+            padding: 18px;
+            padding-left: 60px;
             width: 500px;
             max-width: 100%;
         }
@@ -667,6 +717,38 @@ a{
             content: "✓";
             font-weight: bold;
             border: 2px dashed rgba(248, 252, 251, 0.75);
+        }
+
+
+        #fecha-reg label{
+            display: inline-block;
+            font-size: .95em;
+            margin-right: 66px;
+        }
+        .subsec-registro form input#fecha-hora{
+            /* display: none; */
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            width: 250px;
+        }
+
+
+        .subsec-registro form input[type="submit"]{
+            color: #6a2634;
+            background-color: 353e55;
+            font-size: .9em;
+            padding: 10px 20px;
+            display: block;
+            width: 500px;
+            max-width: 100%;
+            transition: all .4s ease;
+            border: 5px;
+        }
+        .subsec-registro form input[type="submit"]:hover{
+            background-color: #6a2634;
+            transition: .3s;
+            color: #ccc;
         }
 
 /* Estilos del pie de pagina */

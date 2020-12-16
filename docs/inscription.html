@@ -38,7 +38,7 @@
     <div class="portada" id="portada">
         <a href="#seccion1"><button id="boton1"><span class="icon-arrow-down2"></span><!-- Eventos --></button></a>
         <div class="titulo-seccion" id="ts1"><!-- Titulo de seccion -->
-            <a href="#ts1"><h2>FORMULARIO DE REGISTRO</h2></a>            
+            <a href="#ts1"><h2>REGISTRO</h2></a>            
         </div> 
     </div>
 
@@ -46,18 +46,19 @@
     <div class="seccion sec-registro" id="seccion1">  
         <div class="subseccion subsec-registro" id="subseccion1"><!-- primera subseccion-->
             <form action="">
+                <h2>Formulario de registro</h2>
                 <div id="nombre">
                     <label for="name">Nombre del jugador</label>
-                    <input type="text" name="nombre" id="name" placeholder=" 'Ej: Claudio Andrés' ">
+                    <input type="text" name="nombre" id="name" placeholder=" 'Ej: Claudio Andrés' " required>
                     <label for="lname">Apellido del jugador</label>
-                    <input type="text" name="nombre" id="lname" placeholder=" 'Ej: Bravo Muñoz' ">
+                    <input type="text" name="nombre" id="lname" placeholder=" 'Ej: Bravo Muñoz' " required>
                 </div>
 
                 <div id="direccion">
                     <label for="adress">Dirección</label>
-                    <input type="text" name="ciudad" id="adress" placeholder=" 'Ej: Calle Equis 2020' ">
+                    <input type="text" name="ciudad" id="adress" placeholder=" 'Ej: Calle Equis 2020' " required>
                     <label for="city">Ciudad</label>
-                    <input type="text" name="ciudad" id="city" placeholder=" 'Ej: Santiago' ">
+                    <input type="text" name="ciudad" id="city" placeholder=" 'Ej: Santiago' " required>
                 </div>
 
                 <div id="cod_postal">
@@ -142,6 +143,33 @@
                     </div>
                 </div>
 
+                <div id="uniforme">
+                    <div class="opciones">
+                        <h2>Tamaño uniforme:</h2>
+
+                        <input type="radio" name="uniforme" id="ninop">
+                        <label for="ninop">Niño P</label>
+
+                        <input type="radio" name="uniforme" id="ninom">
+                        <label for="ninom">Niño M</label>    
+
+                        <input type="radio" name="uniforme" id="ninog">
+                        <label for="ninog">Niño G</label>
+
+                        <input type="radio" name="uniforme" id="pequeno">
+                        <label for="pequeno">Pequeño</label>
+
+                        <input type="radio" name="uniforme" id="mediano">
+                        <label for="mediano">Mediano</label>
+
+                        <input type="radio" name="uniforme" id="grande">
+                        <label for="grande">Grande</label>
+                        
+                        <input type="radio" name="uniforme" id="xgrande">
+                        <label for="xgrande">Ex. Grande</label>
+                    </div>
+                </div>
+
                 <h2>Permiso para jugar</h2>
                 
                 <p>Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad de lesiones físicas asociadas al fútbol y en consideración a la "Liga" que acepta al solicitante de registro para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.</p>
@@ -151,15 +179,17 @@
 
                     <div class="opciones">
                         <input type="checkbox" name="termino" id="terminos" required >
-                        <label for="terminos">Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a continuación, reconozco que he leído la política de cancelación y acepto sus términos.</label>
+                        <label for="terminos">Al enviar la información "acuerdo" y "autorizo lo anterior", además de firmar, a continuación, reconozco que he leído la política de cancelación y acepto sus términos.</label>
                     </div>
 
-                    <!-- <label for="terminos"></label>
-                    <input type="checkbox" name="terminos" id="terminos" required> -->
                 </div>
                 
-                <input type="datetime-local" name="regdate" id="">
-                <input type="submit" value="Registrarse">
+                <div id="fecha-reg">
+                    <label for="fehca-hora">Fecha de la inscripción</label>
+                    <input type="datetime-local" name="regdate" id="fecha-hora" for>
+                </div>
+
+                <input type="submit" value="Realizar inscripción en NYSL">
             </form>              
         </div>
         <a href="#portada"><button id="boton3"><span class="icon-arrow-up2"></span><!-- Portada --></button></a>
