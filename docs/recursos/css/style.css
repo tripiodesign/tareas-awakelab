@@ -430,6 +430,7 @@ a{
             color: rgba(255, 255, 255, .5);
             text-align: center;
             font-size: .8em;
+            background-color: #943939;
         }
     .subsec-registro form input[type="text"]{
         width: 100%;
@@ -459,7 +460,6 @@ a{
 
     .subsec-registro form > div {
         padding: 10px 0;
-        border-bottom: 1px solid #ccc; 
     }
     .subsec-registro form .radio h3{
         text-align: left;
@@ -629,9 +629,16 @@ a{
             position: relative;
             border-radius: 5px;
             margin: 10px auto;
-            font-size: .8em;
+            font-size: .7em;
             transition: all .5s ease;
             text-align: center;
+            padding: 10px;
+            padding-left: 30px;
+        }
+        #permiso .opciones label:hover{
+            transform: none;
+            background-color: rgba(0, 0, 0, 0);
+            cursor: text;
         }
         #permiso .opciones label::before{
             content: "";
@@ -643,17 +650,23 @@ a{
             left: 20px;
             border-radius: 3px;
             border: 1px dashed indigo;
+            cursor: pointer;
         }
         #permiso .opciones input[type="checkbox"]:checked + label{
             background-color: #6a2634;
             color: #fff;
             font-size: .7em;
             transition: all .3s ease;
+            padding: 10px;
+            padding-left: 30px;
+            width: 500px;
+            max-width: 100%;
         }
         #permiso .opciones input[type="checkbox"]:checked + label::before{
             display: block;
             content: "✓";
             font-weight: bold;
+            border: 2px dashed rgba(248, 252, 251, 0.75);
         }
 
 /* Estilos del pie de pagina */
