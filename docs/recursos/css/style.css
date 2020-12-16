@@ -723,7 +723,7 @@ a{
 
 
         #fecha-reg > label{
-            display: inline-block;
+            display: block;
             font-size: .95em;
             margin-right: 66px;
             float: left;
@@ -733,7 +733,7 @@ a{
             margin: 0 auto;
             margin-top: 20px;
             padding: 0;
-            display: inline-block;
+            display: block;
             width: 230px;
             max-width: 100%;
         }
