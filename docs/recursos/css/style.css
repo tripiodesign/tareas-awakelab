@@ -11,7 +11,7 @@
 }
 * a{
     color: #ebebeb;
-    transition: all .2s ease;
+    transition: all .5s ease;
 }
 h1, h2, h3, h4, h5, h6{
     color: #ebebeb;
@@ -66,7 +66,6 @@ a{
                 text-align: center;
                 padding: 3px 7px;
                 font-size: .75em;
-                transition: all .2s ease;
                 box-shadow: 3px 3px #6a2634;
                 border: 1px dashed #6a2634;
             }
@@ -76,6 +75,7 @@ a{
             .menu ul li:hover{
                 background-color: #f2d1a8;
                 transform: scale(1.05);
+                transition: .3s;
                 border-radius: 5px;
                 border: 1px dashed #ebebeb;
                 box-shadow: 3px 3px #557669;
@@ -93,6 +93,7 @@ a{
                 .menu ul li#reg:hover{
                     background-color: #df2525;
                     border-color: #df2525;
+                    transform: scale(1.08);
                 }
             .menu ul li#reg a{
                 color: #fff;
@@ -127,7 +128,6 @@ a{
         border: 1px dashed #353e55;
         box-shadow: none;
         z-index: 50;
-        transition: all .4s ease;
     }   
         button a{
             margin: auto;
@@ -140,7 +140,7 @@ a{
             transform: scale(1.1);
             background-color: #353e55;
             border: 1px dashed #f2d1a8;
-            transition: .3s ease; 
+            transition: .5s ease; 
         }
         button:hover span{
             color: #ebebeb;
@@ -261,7 +261,6 @@ a{
             table tr th{
                 padding: 1px;
                 border: 1px dashed #943939;
-                transition: all .3s ease;
             }
             table .head{
                 transition: all .3s ease;
@@ -432,7 +431,12 @@ a{
         .subsec-registro form h2{
             color: #6a2634;
             font-size: 1.2em;
-            margin: 20px 0;
+            margin: 10px 0;
+        }
+        .subsec-registro form h4{
+            color: #6a2634;
+            font-size: .8em;
+            margin: 0 auto;
         }
         .subsec-registro form label{
             display: block;
@@ -469,8 +473,8 @@ a{
         width: 300px;
         max-width: 100%;
         margin: 0 auto;
-        margin-top: 20px;
-        display: block;
+        margin-top: 0px;
+        display: inline-block;
     }
 
 
@@ -489,8 +493,8 @@ a{
             padding: 5px 15px 5px 40px;
             font-size: 1em;
             border-radius: 5px;
-            transition: all 0.4s ease; 
             position: relative;
+            transition: .5s;
         }
     .subsec-registro form .radio label:hover{
         background: rgba(248, 252, 251, 0.75);
@@ -539,7 +543,7 @@ a{
                 font-size: .7em;
                 outline: none;
                 text-align: right;
-                display: block;
+                display: inline-block;
                 margin: 0 auto;
                 margin-top: 15px;
 
@@ -616,7 +620,6 @@ a{
             padding: 5px;
             width: 100px;
             font-size: .8em;
-            transition: all .3s ease;
         }
         #permiso .opciones input[type="checkbox"]:checked + label::before,
         #uniforme .opciones input[type="checkbox"]:checked + label::before,
@@ -706,7 +709,6 @@ a{
             background-color: #6a2634;
             color: #fff;
             font-size: .7em;
-            transition: all .3s ease;
             padding: 18px;
             padding-left: 60px;
             width: 500px;
@@ -720,17 +722,20 @@ a{
         }
 
 
-        #fecha-reg label{
+        #fecha-reg > label{
             display: inline-block;
             font-size: .95em;
             margin-right: 66px;
+            float: left;
         }
         .subsec-registro form input#fecha-hora{
             /* display: none; */
-            margin: 0;
+            margin: 0 auto;
+            margin-top: 20px;
             padding: 0;
             display: inline-block;
-            width: 250px;
+            width: 230px;
+            max-width: 100%;
         }
 
 
@@ -739,16 +744,21 @@ a{
             background-color: 353e55;
             font-size: .9em;
             padding: 10px 20px;
+            margin: 0 auto;
+            margin-top: 20px;
             display: block;
-            width: 500px;
+            width: 250px;
             max-width: 100%;
             transition: all .4s ease;
             border: 5px;
+            display: block;
         }
         .subsec-registro form input[type="submit"]:hover{
             background-color: #6a2634;
-            transition: .3s;
             color: #ccc;
+            transform: scale(1.02);
+            /* filter: blur(3px); */
+            border-radius: 10px;
         }
 
 /* Estilos del pie de pagina */

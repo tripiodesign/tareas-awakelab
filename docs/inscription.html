@@ -47,17 +47,18 @@
         <div class="subseccion subsec-registro" id="subseccion1"><!-- primera subseccion-->
             <form action="">
                 <h2>Formulario de registro</h2>
+                <h4>los campos con (*) son necesarios</h4>
                 <div id="nombre">
-                    <label for="name">Nombre del jugador</label>
+                    <label for="name">Nombre del jugador (*)</label>
                     <input type="text" name="nombre" id="name" placeholder=" 'Ej: Claudio Andrés' " required>
-                    <label for="lname">Apellido del jugador</label>
+                    <label for="lname">Apellido del jugador (*)</label>
                     <input type="text" name="nombre" id="lname" placeholder=" 'Ej: Bravo Muñoz' " required>
                 </div>
 
                 <div id="direccion">
-                    <label for="adress">Dirección</label>
+                    <label for="adress">Dirección (*)</label>
                     <input type="text" name="ciudad" id="adress" placeholder=" 'Ej: Calle Equis 2020' " required>
-                    <label for="city">Ciudad</label>
+                    <label for="city">Ciudad (*)</label>
                     <input type="text" name="ciudad" id="city" placeholder=" 'Ej: Santiago' " required>
                 </div>
 
@@ -67,12 +68,12 @@
                 </div>
 
                 <div id="nacimiento">
-                    <label for="date">Fecha de nacimiento</label>
+                    <label for="date">Fecha de nacimiento (*)</label>
                     <input type="date" id="date">
                 </div>
 
                 <div class="radio">
-                    <h3>Genero:</h3>
+                    <h3>Genero (*)</h3>
 
                     <input type="radio" name="sexo" id="hombre">
                     <label for="hombre">Hombre</label>
@@ -83,7 +84,7 @@
                 </div>
 
                 <div id="grado">
-                    <label for="grade">Grado</label>
+                    <label for="grade">Grado (*)</label>
 
                     <select name="grade" id="grado">
                         <option value="valor1" selected>Selecciona tu grado...</option>
@@ -100,7 +101,7 @@
                     <h2>¿De que escuela vives mas cerca?</h2>
                     
                     <div class="opciones">
-                        <h3 >Escuela más cercana:</h3>
+                        <h3 >Escuela más cercana</h3>
 
                         <input type="checkbox" name="school" id="school1">
                         <label for="school1">AJ Katzenmaier</label>
@@ -127,7 +128,7 @@
                     
                     <div class="opciones">
                         <h2>¿Qué posición(es) juegas normalmente?</h2>
-                        <h3>(marque todas las que correspondan)</h3>
+                        <h3>(marque todas las que correspondan) (*)</h3>
 
                         <input type="checkbox" name="posicion" id="delantero">
                         <label for="delantero">Delantero</label>
@@ -145,7 +146,7 @@
 
                 <div id="uniforme">
                     <div class="opciones">
-                        <h2>Tamaño uniforme:</h2>
+                        <h2>Tamaño uniforme (*)</h2>
 
                         <input type="radio" name="uniforme" id="ninop">
                         <label for="ninop">Niño P</label>
@@ -179,13 +180,13 @@
 
                     <div class="opciones">
                         <input type="checkbox" name="termino" id="terminos" required >
-                        <label for="terminos">Al enviar la información "acuerdo" y "autorizo lo anterior", además de firmar, a continuación, reconozco que he leído la política de cancelación y acepto sus términos.</label>
+                        <label for="terminos">(*) Al enviar la información "acuerdo" y "autorizo lo anterior", además de firmar, a continuación, reconozco que he leído la política de cancelación y acepto sus términos.</label>
                     </div>
 
                 </div>
                 
                 <div id="fecha-reg">
-                    <label for="fehca-hora">Fecha de la inscripción</label>
+                    <label for="fehca-hora">Fecha de la inscripción (*)</label>
                     <input type="datetime-local" name="regdate" id="fecha-hora" for>
                 </div>
 
