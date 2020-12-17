@@ -6,18 +6,15 @@
     -moz-box-sizing: border-box;
     font-size: 1em;
     font-family: 'Andika New Basic';
-    color: indigo;
+    color: #f2d1a8;
     border: none;
 }
 * a{
     color: #ebebeb;
     transition: all .5s ease;
 }
-h1, h2{
+h1, h2, h3, h4, h5, h6{
     color: #ebebeb;
-}
-h3, h4, h5, h6{
-    color: #943939;
 }
 html{
     scroll-behavior: smooth;
@@ -88,26 +85,19 @@ a{
                 }
 
             .menu ul li#reg{
-                background-color: #54648c;
-                border-color: #6647f2;
+                background-color: #8a0b0b;
+                border-color: #bf0a0a;
                 border-radius: 5px;
                 box-shadow: 2px 2px #525151;
-                transition: all .3s ease;
             }
                 .menu ul li#reg:hover{
-                    background-color: #6647f2;
+                    background-color: #df2525;
+                    border-color: #df2525;
                     transform: scale(1.08);
-                    }
-            .menu ul li#reg > a{
-                color: #fff;
-                transition: none;
-            }
-                .menu ul li#reg:hover a{
-                    font-family: 'east sea dokdo';
-                    font-weight: lighter;
-                    font-size: 1.45em;
-                    transform:none ;
                 }
+            .menu ul li#reg a{
+                color: #fff;
+            }
             
 /* Estilo de la Portada*/
 .portada{
@@ -206,28 +196,27 @@ a{
             
         }/* #6a2634 */
             .subsec-index#subseccion1 .articulos{
-                background-color: rgba(248, 252, 251, 0.75);
+                background-color: #943939;
                 border: 3px outset #5e8a78;
             }
             .subsec-index#subseccion1 .articulos h2{
                     text-align: center;
                     background-color: #353e55;
                     padding: 5px;
-            }
+                    /* font-size: 1.2em; */
+                }
                 .subsec-index#subseccion1 .articulo{
                     width: 100%;
                     max-width: 400px;
                     margin: 8px auto;
                     padding: 5px;
-                    border-top: 1px dashed #943939;
-                    border-bottom: 1px dashed #943939;
+                    border-top: 1px dashed #ebebeb;
+                    border-bottom: 1px dashed #ebebeb;
                 }
-                    .subsec-index#subseccion1 .articulo h3{
-                        color: #943939;
-                    }
-                    .subsec-index#subseccion1 .articulo a{
-                        color: #943939;
-                    }
+                    /* .subsec-index#subseccion1 .articulo h3{
+                        font-size: 1em;
+                        
+                    } */
                     .subsec-index#subseccion1 .articulo p{
                         font-size: .8em;
                     }
@@ -235,24 +224,16 @@ a{
 /* Segunda seccion - index */
 .sec-index#seccion2{
     display: flex;
-    padding: 0px;
 }
     .calendario{
-        background-color: rgba(248, 252, 251, 0.75);
+        background-color: #943939;
+        width: 500px;
+        max-width: 100%;
         border: 3px outset #5e8a78;
-        margin: 30px auto;
-        width: 700px;
-        max-width: 100%; 
-        display: flex;
-        flex-direction: column;
-        position: relative;
+        margin: auto;
+        /* display: flex;
+        flex-direction: column; */
     }
-
-        .calendario iframe{
-            margin: auto;
-            display: block;
-        }
-
         .calendario h1{
             width: 100%;
             padding: 5px 20px; 
@@ -271,43 +252,40 @@ a{
         }
     /* Diseño de la tabla del calendario */
         table{
-            width: 700px;
-            max-width: 100%;
+            width: 100%;
             text-align: center;
             font-size: .68em;
-        }
-        .subsec-index#subseccion2 table{
-            display: inline-block;
-        }
-        .subsec-index#subseccion2  table > tr td{
-            font-weight: bold;
+            margin: auto;
+            /* width: 100%; */
         }
             table tr th{
                 padding: 1px;
-                border: 1px dashed rgba(248, 252, 251, 0.1);
+                border: 1px dashed #943939;
             }
             table .head{
-                transition: all .5s ease;
+                transition: all .3s ease;
             }
                 table:hover .head{
-                    background-color: rgba(148, 57, 57, 0.85);
+                    background-color: #f2d1a8;
                     border: 1px dashed #353e55;
-                    transition: all .4s ease;
+                    transition: all .5s ease;
                 }
                 table:hover .head th{
-                    color: #fff;
+                    color: #557669;
+
                 }
             table tr td{
                 height: 10px;
                 padding: 1px;
-                border: 1px dashed  rgba(248, 252, 251, 0.1);
+                border: 1px dashed #943939;
             }
                 table tr td:hover{
-                    color: #fff;
-                    font-weight: bold;
-                    background-color: rgba(148, 57, 57, 0.85);
+                    color: #557669;
+                    background-color: #f2d1a8;
                     border: 1px dashed #353e55;
                 }
+
+
 
 /* Estilos pagina about */
     /* Estilo de seccion1 - about */
@@ -319,7 +297,7 @@ a{
     max-width: 90%;
 }
     .subsec-about#subseccion1 .articulos{
-        background-color:   rgba(248, 252, 251, 0.75);
+        background-color: #943939;
         border: 3px outset #5e8a78;
     }
     .subsec-about#subseccion1 .articulos h2{
@@ -333,12 +311,12 @@ a{
             max-width: 100%;
             margin: 20px auto;
             padding: 5px;
-            border-top: 1px dashed #943939;
-            border-bottom: 1px dashed #943939;
+            border-top: 1px dashed #ebebeb;
+            border-bottom: 1px dashed #ebebeb;
         }
             .subsec-about#subseccion1 .articulo h3{
                 font-size: 1em;
-                color: #943939;
+                
             }
             .subsec-about#subseccion1 .articulo p{
                 font-size: .78em;
@@ -351,13 +329,10 @@ a{
     max-width: 90%;
 }
     .subsec-contact#subseccion1 .articulos{
-        background-color: rgba(248, 252, 251, 0.75);
+        background-color: #943939;
         border: 3px outset #5e8a78;
     }
-        .subsec-contact#subseccion1 .articulos a{
-            color: #943939;
-        }
-        .subsec-contact#subseccion1 .articulos h2{
+    .subsec-contact#subseccion1 .articulos h2{
             text-align: center;
             background-color: #353e55;
             padding: 5px;
@@ -368,28 +343,22 @@ a{
             max-width: 100%;
             margin: 20px auto;
             padding: 5px;
-            border-top: 1px dashed #943939;
-            border-bottom: 1px dashed #943939;
+            border-top: 1px dashed #ebebeb;
+            border-bottom: 1px dashed #ebebeb;
         }
             .subsec-contact#subseccion1 .articulo h3{
-                font-size: 1.2em;
-                color: #943939;  
-                margin-bottom: 30px;              
+                font-size: 1.7em;
+                
             }
             .subsec-contact#subseccion1 .articulo p{
                 font-size: .8em;
-                text-align: center;
-                margin-bottom: 20px;
             }
 /* Estilos pagina rules */
     /* Estilo de seccion1 - rules */
 .sec-rules{
     max-height: auto;
     padding: 50px 0;
-}   
-    .subsec-rules ul, ol, li, dl, dt, dd{
-        color: #f2d1a8;
-    }
+}
     .subsec-rules{
         width: 1000px;
         max-width: 90%;
@@ -397,7 +366,6 @@ a{
         .subsec-rules article h1,h2,h3,h4,h5{
             font-family: 'Andika New Basic';
             text-align: center;
-            color: #ebebeb;
         }
         .subsec-rules article h2{
             font-weight: bold;
@@ -454,7 +422,7 @@ a{
         padding-bottom: 50px;
 
     }
-     form{
+    .subsec-registro form{
         width: 500px;
         max-width: 100%;
         margin: 0 auto;
@@ -470,78 +438,70 @@ a{
             font-size: .8em;
             margin: 0 auto;
         }
-         form label{
-            display:  inline-block;
+        .subsec-registro form label{
+            display: block;
             text-align: left;
             color: indigo;
-            margin: 10px 0;
-            margin-right: 9px;
-            max-width: 100%;
-            width: 200px;
+            margin: 20px 0;
         }
-    form input{
+    .subsec-registro form input{
         outline: none;
         text-align: center;
     }
-        form input::placeholder{
+        .subsec-registro form input::placeholder{
             color: rgba(255, 255, 255, .5);
             text-align: center;
             font-size: .8em;
         }
-    form input[type="text"], input[type="number"]{
-        width: 250px;
-        max-width: 100%;
+    .subsec-registro form input[type="text"]{
+        width: 100%;
         color: #ffffff;
         background-color: #943939;
         padding: 5px;
         font-size: .9em;
     }
-    input[type=number]::-webkit-inner-spin-button, 
-    input[type=number]::-webkit-outer-spin-button { 
-        -webkit-appearance: none; 
-        margin: 0; 
-    }
 
-    form input[type="date"], [type="datetime-local"]{
+
+
+    .subsec-registro form #nacimiento label{
+        display: inline-block;
+        margin-right: 24px;
+    }
+    .subsec-registro form input[type="date"], [type="datetime-local"]{
         color: #943939;
         text-align: center;
-        width: 250px;
+        width: 300px;
         max-width: 100%;
         margin: 0 auto;
-        /* display: block; */
-    }
-
-
-
-    form > div {
-        padding: 10px 0;
+        margin-top: 0px;
         display: inline-block;
     }
-    form .radio h3{
-        width: 210px;
+
+
+
+    .subsec-registro form > div {
+        padding: 10px 0;
+    }
+    .subsec-registro form .radio h3{
         text-align: left;
         color: indigo;
         font-weight: lighter;
-        display: inline-block;
     }
-    form .radio label{
+    .subsec-registro form .radio label{
             display: inline-block;
             cursor: pointer;
-            padding: 5px 5px 5px 35px;
+            padding: 5px 15px 5px 40px;
             font-size: 1em;
             border-radius: 5px;
             position: relative;
-            transition: all .5s linear; 
-            width: 120px;
-            margin: 0;
-            text-align:right;
+            transition: .5s;
         }
-    form .radio label:hover{
+    .subsec-registro form .radio label:hover{
         background: rgba(248, 252, 251, 0.75);
         color: #6a2634; 
         transform: scale(1.02);
     }
-    form .radio label:before {/* "boton" de etiqueta */
+    .subsec-registro form .radio label:before {/* "boton" de etiqueta */
         content: "";
         display: inline-block;
         width: 17px;
@@ -552,38 +512,43 @@ a{
         border: 2px dashed indigo;
         position: absolute; 
     }
-    form input[type="radio"] {
+    .subsec-registro form input[type="radio"] {
+    display: none; 
+    }
+    .subsec-registro form input[type="radio"]:checked + label:before {
         display: none; 
     }
-    form input[type="radio"]:checked + label:before {
-        display: none; 
-    }
-    form input[type="radio"]:checked + label {
-        padding: 5px ;
-        background-color: #6a2634;
-        border-radius: 2px;
-        color: #fff; 
-        text-align: center;
+    .subsec-registro form input[type="radio"]:checked + label {
+    padding: 5px 15px;
+    background-color: #6a2634;
+    border-radius: 2px;
+    color: #fff; 
     }
     
 
 
-        div#grado{
+        .subsec-registro div#grado{
         width: 500px;
         max-width: 100%;
         }
-            #grado select{
-                width: 250px;
+            .subsec-registro #grado label {
+                display: inline-block;
+                margin-right: 130px;
+            }
+            .subsec-registro #grado select{
+                width: 300px;
                 max-width: 100%;
+                height: 30px;
                 color: #943939;
                 font-size: .7em;
                 outline: none;
                 text-align: right;
                 display: inline-block;
                 margin: 0 auto;
-                padding: 5px;
+                margin-top: 15px;
+
             }
-            #grado option{
+            .subsec-registro #grado option{
                     color: #98adce;
                 }
 
@@ -596,28 +561,34 @@ a{
             color: indigo;
             font-weight: lighter;
         }
-        
-        .opciones label{
-            width: 230px;
+        #permiso .opciones label,
+        #uniforme .opciones label,
+        #escuela .opciones label,
+        #posiciones .opciones label{
+            width: 237px;
             max-width: 100%;
-            display: block;
-            float: left;
+            display: inline-block;
             cursor: pointer;
             position: relative;
             border-radius: 5px;
-            padding: 5px 5px 5px 50px;
+            margin: 10px auto;
+            padding: 5px 5px 5px 40px;
             font-size: .9em;
             transition: all .5s ease;
             text-align: center;
         }
-       
-        .opciones label:hover{
+        #permiso .opciones label:hover,
+        #uniforme .opciones label:hover,
+        #escuela .opciones label:hover,
+        #posiciones .opciones label:hover{
             background-color: rgba(248, 252, 251, 0.7);
             color: #6a2634; 
             transform: scale(1.02);
         }
-        
-        .opciones label::before{
+        #permiso .opciones label::before,
+        #uniforme .opciones label::before,
+        #escuela .opciones label::before,
+        #posiciones .opciones label::before{
             content: "";
             display: inline-block;
             width: 15px;
@@ -628,18 +599,32 @@ a{
             border-radius: 3px;
             border: 2px dashed indigo;
         }
-        .opciones label:hover::before{
+        #permiso .opciones label:hover::before,
+        #uniforme .opciones label:hover::before,
+        #escuela .opciones label:hover::before,
+        #posiciones .opciones label:hover::before{
             border-color: #6a2634;
         }
-        .opciones input[type="checkbox"]{
+        #permiso .opciones input[type="checkbox"],
+        #uniforme .opciones input[type="checkbox"],
+        #escuela .opciones input[type="checkbox"],
+        #posiciones .opciones input[type="checkbox"]{
             display: none;
         }
-        .opciones input[type="checkbox"]:checked + label{
+        #permiso .opciones input[type="checkbox"]:checked + label,
+        #uniforme .opciones input[type="checkbox"]:checked + label,
+        #escuela .opciones input[type="checkbox"]:checked + label,
+        #posiciones .opciones input[type="checkbox"]:checked + label{
             background-color: #6a2634;
             color: #fff;
             padding: 5px;
+            width: 100px;
+            font-size: .8em;
         }
-        .opciones input[type="checkbox"]:checked + label::before{
+        #permiso .opciones input[type="checkbox"]:checked + label::before,
+        #uniforme .opciones input[type="checkbox"]:checked + label::before,
+        #escuela .opciones input[type="checkbox"]:checked + label::before,
+        #posiciones .opciones input[type="checkbox"]:checked + label::before{
             display: none;
         }
 
@@ -648,18 +633,30 @@ a{
             text-align: center;
             font-size: .9em;
             margin-bottom: 20px;
+
         }
         #posiciones .opciones label{
-            width: 230px;
+            width: 116px;
             max-width: 100%;
+            padding: 5px 5px 5px 20px;
+        }
+        #posiciones .opciones label::before{
+            left: 3px;
         }
         .subsec-registro form p{
             color: indigo;
             font-size: .85em;
         }
+
+
         #uniforme .opciones label{
             width: 150px;
             max-width: 100%;
+        }
+        #uniforme .opciones label::before{
+            width: 20px;
+            height: 20px;
+            top: 3px ;
         }
         #uniforme .opciones input[type="radio"]:checked + label:hover{
             background-color: #6a2634;  
@@ -673,9 +670,9 @@ a{
             font-size: 1.2em;
             vertical-align: top;
         }
-        /* #uniforme .opciones input[type="radio"]:checked + label{
+        #uniforme .opciones input[type="radio"]:checked + label{
             padding-left: 10px;
-        } */
+        }
 
 
 
@@ -686,16 +683,15 @@ a{
             border-radius: 5px;
             margin: 10px auto;
             font-size: .75em;
-            transition: all .3s linear;
+            transition: all .5s ease;
             text-align: center;
             padding: 15px;
             padding-left: 50px;
         }
         #permiso .opciones label:hover{
-            transform: scale(1.02);
+            transform: none;
             background-color: rgba(0, 0, 0, 0);
             cursor: text;
-            color: #943939;
         }
         #permiso .opciones label::before{
             content: "";
@@ -727,20 +723,25 @@ a{
 
 
         #fecha-reg > label{
+            display: block;
             font-size: .95em;
-            width: 210px;
-            display: inline-block;
+            margin-right: 66px;
+            float: left;
         }
         .subsec-registro form input#fecha-hora{
-            width: 250px;
+            /* display: none; */
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 0;
+            display: block;
+            width: 230px;
             max-width: 100%;
-            display: inl;
         }
 
 
         .subsec-registro form input[type="submit"]{
-            color: #ccc;
-            background-color: #353e55;
+            color: #6a2634;
+            background-color: 353e55;
             font-size: .9em;
             padding: 10px 20px;
             margin: 0 auto;
@@ -756,57 +757,8 @@ a{
             background-color: #6a2634;
             color: #ccc;
             transform: scale(1.02);
+            /* filter: blur(3px); */
             border-radius: 10px;
-        }
-
-
-/* Estilo de pagina resultado de formulario registro*/
-.subsec-resultado{
-    width: 1000px;
-    max-width: 90%;
-    background-color:  rgba(248, 252, 251, 0.75);
-    margin: 50px auto;
-}   
-    .subsec-resultado h1{
-        font-size: 1.3em;
-        color: #ccc;
-        text-align: center;
-        background-color: #54648c;
-        border: 3px inset #f2d1a8 ;
-        padding: 20px 0;
-    }
-    .subsec-resultado h2{
-        font-size: 1.2em;
-        color: #6a2634;
-        text-align: center;
-        font-style: oblique;
-        text-decoration: underline;
-
-        margin: 10px auto;
-    }
-    .subsec-resultado table{
-        margin: 20px auto;
-    }
-    .subsec-resultado th, .subsec-resultado tr td{
-        border: 1px dashed #943939;
-        padding: 10px 0;
-    }
-    .subsec-resultado td:hover{
-        background-color: #6a2634;
-    }
-    button.go{
-        position: static;
-        width: 500px;
-        max-width: 90%;
-        background-color: #6a2634;
-        border-radius: 5px;
-        display: block;
-        margin: 10px auto;
-        transition: all .5s ease;
-    }
-        button.go:hover{
-            transform: none;
-            background-color: #382e63;
         }
 
 /* Estilos del pie de pagina */
@@ -818,9 +770,7 @@ footer{
     border-top: 1px dashed #f2d1a8;
     background-color: #6a2634;
 }
-footer span{
-    color: #f2d1a8;
-}
+
  /* Diseñon de la parte superior del pie de pagina */
     .parte1{
         width: 100%;
