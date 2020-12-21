@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: chartreuse;
+}
+body{
+    background-image: url(../img/design1_image1.jpg);
+    background-position-y: 80%;
+}
+
+.grid-container{
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    /* justify-content: center; */
+    align-items: center; 
+    grid-template-areas: "head nav"
+                         "main main"
+                         "foot foot";
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 5fr 3fr;
+}
+header{
+    grid-area: head;
+    text-align: center;
+    align-items: center;
+}
+    header h1{
+        width: 15rem;
+        margin: auto;
+        margin-right: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+nav{
+    grid-area: nav;
+    width: 90%;
+    height: 100%;    
+}
+    nav ul{
+        list-style: none;
+        margin: auto 0;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(5, 16%);
+        grid-template-rows: 50%;
+        grid-column-gap: 5px;
+
+    }
+    nav ul li{
+        display: inline-block;
+        background-color: #3d61ad;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 0 0 10px 10px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: .9em;
+    }
+    nav ul li:hover{
+        height: 5.2rem;
+        padding-top: 3rem;
+        background-color: #6c95ec;
+    }
+
+main{
+    grid-area: main;
+    background-color: green;
+    height: 100%;
+}
+footer{
+    grid-area: foot;
+    background-color: indianred ;
+    height: 100%;
+}
