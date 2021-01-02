@@ -92,7 +92,7 @@ function encontrarPalabra(cadenaUno) {
     document.write(`El texto ingresado fue: <b>${cadenaUno}</b><br>`);
     document.write(`El texto contiene <b>${palabras.length}</b> palabras<br>`);
     
-    subH2('La palabra mas larga del texto ingresado es:'); 
+    subH2('La palabra mas larga del texto ingresado es:') 
     
     while(counter3 < palabras.length){
         document.write('<center>' + palabras[counter3] + '</center>');
