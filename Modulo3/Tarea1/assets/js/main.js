@@ -9,3 +9,4 @@ $('#ttMas3').addClass('text-warning');
 $('#ttMenos1').addClass('text-warning');
 $('#ttMenos2').addClass('text-warning');
 $('#ttMenos3').addClass('text-warning');
+

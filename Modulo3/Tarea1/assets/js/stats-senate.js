@@ -5094,12 +5094,12 @@ function statsPartido() {
   var pctVotosI = ((votosInd * 100) / totalVotos).toFixed(3);
   
   
-  $('#tdMemRep').text(contRep);
-  $('#tdVotRep').text(pctVotosR + '%');
-  $('#tdMemDem').text(contDem);
-  $('#tdVotDem').text(pctVotosD + '%');
-  $('#tdMemInd').text(contInd);
-  $('#tdVotInd').text(pctVotosI + '%');
+  $('#tdMemRep').text(contRep).addClass('text-center');
+  $('#tdVotRep').text(pctVotosR + '%').addClass('text-center');
+  $('#tdMemDem').text(contDem).addClass('text-center');
+  $('#tdVotDem').text(pctVotosD + '%').addClass('text-center');
+  $('#tdMemInd').text(contInd).addClass('text-center');
+  $('#tdVotInd').text(pctVotosI + '%').addClass('text-center');
 }
 // console.log('Votos por partido');
 statsPartido();
@@ -5140,10 +5140,10 @@ function compromiso() {
     ancore.addClass('text-info');
 
     var tdVotosMas = $('<td>');
-    tdVotosMas.text(arrMasC[i].missed_votes);
+    tdVotosMas.text(arrMasC[i].missed_votes).addClass('text-center');
 
     var tdPctMas = $('<td>');
-    tdPctMas.text(arrMasC[i].missed_votes_pct + '%');
+    tdPctMas.text(arrMasC[i].missed_votes_pct + '%').addClass('text-center');
 
     tRowMas.append(tdNombreMas);
     tRowMas.append(tdVotosMas);
@@ -5157,8 +5157,8 @@ function compromiso() {
   }
   
   $('#ttMas1').text('Nombre');
-  $('#ttMas2').text('Votos Perdidos');
-  $('#ttMas3').text('% Perdida');
+  $('#ttMas2').text('Votos Perdidos').addClass('text-center');
+  $('#ttMas3').text('% Perdida').addClass('text-center');
 
 
   // Menos comprometidos
@@ -5177,10 +5177,10 @@ function compromiso() {
     ancore.addClass('text-info');
 
     var tdVotosMenos = $('<td>');
-    tdVotosMenos.text(arrMenosC[i].missed_votes);
+    tdVotosMenos.text(arrMenosC[i].missed_votes).addClass('text-center');
 
     var tdPctMenos = $('<td>');
-    tdPctMenos.text(arrMenosC[i].missed_votes_pct + '%');
+    tdPctMenos.text(arrMenosC[i].missed_votes_pct + '%').addClass('text-center');
 
     tRowMenos.append(tdNombreMenos);
     tRowMenos.append(tdVotosMenos);
@@ -5194,8 +5194,8 @@ function compromiso() {
   }
   
   $('#ttMenos1').text('Nombre');
-  $('#ttMenos2').text('Votos Perdidos');
-  $('#ttMenos3').text('% Perdida');
+  $('#ttMenos2').text('Votos Perdidos').addClass('text-center');
+  $('#ttMenos3').text('% Perdida').addClass('text-center');
 }
 
 compromiso();
